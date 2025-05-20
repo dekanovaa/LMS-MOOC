@@ -1,0 +1,49 @@
+
+.kurs-menu {
+    
+    width: 100%;
+    padding: 15px;
+    background-color: transparent;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
+    border-radius: 10px;
+ 
+}
+
+.menu-top,.menu-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-row{
+    padding: 8px 0px 8px 15px;
+
+}
+
+.menu-left,.menu-sub-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-text {
+    font-size: 14px;
+    gap: 5px;
+    font-weight: 600;
+ 
+}
+
+.fa-chevron-right {
+    font-size: 11px;
+    color: white;
+}
+
+.menu-bottom{
+    border-left: 1px solid black;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+.menu-row:hover{
+    background-color: rgb(241, 239, 239);
+}

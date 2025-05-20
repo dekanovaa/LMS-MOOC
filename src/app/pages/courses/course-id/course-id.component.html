@@ -1,0 +1,103 @@
+<!-- lg:pl-100 pr-10 pl-5 -->
+<div class="course-main container" *ngIf="course">
+  <div class="top">
+    <div>
+      <div class="top-wrap">
+        <h2 class="top-wrap-title">{{ course.title }}</h2>
+        <p class="top-text">
+          Angular, Google tomonidan ishlab chiqilgan va qo’llab-quvvatlanadigan,
+          JavaScript freymvorklari dunyosidagi mashhur o’yinchilardan biridir.
+          Angular to’liq, ma’lum me’yorlarga ega bo’lgan freymvork bo’lib,
+          frontend bilan bog’liq keng qamrovli masalalar uchun o’z yechimlarini
+          taklif etadi, bu yechimlar orasida renderlash, state menejment,
+          routing va forma ishlovi mavjud. Angular React’dan farqli reaktivlik
+          modelini taklif etadi. Virtual DOM farqlash(diffing) va reconciliation
+          jarayoni o’rniga Angular o’zining “o’zgarishlarni aniqlash” (change
+          detection) tizimini qo’llaydi.
+        </p>
+        <p class="sub-text">Davomiylik: <span>16 soat 50 daqiqa</span></p>
+      </div>
+    </div>
+    <div class="cart-top"><iframe src="https://www.youtube.com/embed/VW7xfDoM3C8?si=otf9FyI1zGxg9EPM" frameborder="0" width="100%" height="100%"></iframe></div>
+  </div>
+
+  <section class="bottom">
+    <div class="bottom-left">
+      <div class="box">
+        <h4 class="box-title">Kursning mazmuni</h4>
+        <ul class="box-list">
+          <li>
+            <i class="fa-solid fa-bars"></i>
+            <p class="">Modullar soni</p>
+            <p class="number">4</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-tv"></i>
+            <p class="">Darslar soni</p>
+            <p class="number">28</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-calendar-days"></i>
+            <p class="">Kurs davomiyligi</p>
+            <p class="number">16 soat 50 daqiqa</p>
+          </li>
+        </ul>
+        <!-- menu -->
+        <app-course-module></app-course-module>
+        <app-course-module></app-course-module>
+        <app-course-module></app-course-module>
+        <app-course-module></app-course-module>
+      </div>
+      <div class="box">
+        <h4 class="box-title">Nimalarni o'rganasiz?</h4>
+        <ul class="box-sub-list">
+          <li class="box-sub-item">
+            <i class="fa-regular fa-circle-check"></i>
+            <p class="text-xl">Service</p>
+          </li>
+          <li class="box-sub-item">
+            <i class="fa-regular fa-circle-check"></i>
+            <p class="text-xl">Angular Forms</p>
+          </li>
+          <li class="box-sub-item">
+            <i class="fa-regular fa-circle-check"></i>
+            <p class="text-xl">Ng Zorro</p>
+          </li>
+          <li class="box-sub-item">
+            <i class="fa-regular fa-circle-check"></i>
+            <p class="text-xl">CRUD</p>
+          </li>
+          <li class="box-sub-item">
+            <i class="fa-regular fa-circle-check"></i>
+            <p class="text-xl">Type Script</p>
+          </li>
+          <li class="box-sub-item">
+            <i class="fa-regular fa-circle-check"></i>
+            <p class="text-xl">Pipes</p>
+          </li>
+          <li class="box-sub-item">
+            <i class="fa-regular fa-circle-check"></i>
+            <p class="text-xl">Routes</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="cart">
+      <h2 class="cart-title">
+        <span>Kurs narxi: </span>
+        Bepul
+      </h2>
+      <span class="cart-text">Kurs O'qituvchisi: Odilbek Utamuratov</span>
+      <a>
+        <button class="cart-btn" (click)="gotoStart()">
+          Kursni boshlash
+          <i class="fa-solid fa-right-to-bracket"></i>
+        </button>
+      </a>
+    </div>
+  </section>
+</div>
+<a>
+  Kursni boshlash
+  <i class="fa-solid fa-right-to-bracket"></i>
+</a>

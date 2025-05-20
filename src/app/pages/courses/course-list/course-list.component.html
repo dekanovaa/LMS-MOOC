@@ -1,0 +1,11 @@
+<div class="course-list">
+    <h2 class="course-title">
+        Kurslar
+    </h2>
+   <div class="cart-wrap">
+    <app-course-cart
+    *ngFor="let c of courses"
+    [course]="c">
+    </app-course-cart>
+   </div>
+</div>

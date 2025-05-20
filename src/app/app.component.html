@@ -1,0 +1,58 @@
+<nz-layout class="app-layout">
+  <nz-sider
+    class="menu-sidebar"
+    nzCollapsible
+    nzWidth="256px"
+    nzBreakpoint="md"
+    [(nzCollapsed)]="isCollapsed"
+    [nzTrigger]="null"
+  >
+    <div class="sidebar-logo">
+      <a href="/" >
+        <img src="assets/image/logo.png" alt="logo" />
+        <h1>IlmNur</h1>
+      </a>
+    </div>
+    <ul
+      nz-menu
+      nzTheme="dark"
+      nzMode="inline"
+      [nzInlineCollapsed]="isCollapsed"
+    >
+      <ul class="sidebar-list">
+        <li nz-menu-item nzMatchRouter>
+          <a routerLink="/welcome" class="menu-link"><span><i class="fa-solid fa-house"></i></span>Bosh sahifa</a>
+        </li>
+        <li nz-menu-item nzMatchRouter>
+          <a routerLink="/courses" class="menu-link"><span><i class="fa-solid fa-layer-group"></i></span>Kurslar</a>
+        </li>
+        <li nz-menu-item nzMatchRouter>
+          <a routerLink="/codes" class="menu-link"><span><i class="fa-solid fa-code"></i></span>Kod manbalar</a>
+        </li>
+        <li nz-menu-item nzMatchRouter>
+          <a routerLink="/cinema" class="menu-link"><span><i class="fa-solid fa-film"></i></span>Filmlar</a>
+        </li>
+      </ul>
+    </ul>
+  </nz-sider>
+  <nz-layout>
+    <nz-header>
+      <div class="app-header">
+        <span class="header-trigger" (click)="isCollapsed = !isCollapsed">
+          <nz-icon
+            class="trigger"
+            [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
+          />
+        </span>
+        <a routerLink="/sign-in" class="menu-link">Kirish <span><i class="fa-solid fa-arrow-right-to-bracket"></i></span></a>
+      </div>
+      
+    </nz-header>
+    <nz-content>
+      <div class="inner-content">
+        <router-outlet></router-outlet>
+      </div>
+    </nz-content>
+  </nz-layout>
+</nz-layout>
+

@@ -1,0 +1,47 @@
+<div class="welcome">
+  <div class="component">
+    <div class="welcome-top">
+      <h1 class="top-title">
+        <span>Ilm Nur</span> - ko'p sohadagi eng yaxshi, bepul, online
+        kurslari !
+      </h1>
+    </div>
+    <div class="wrap">
+     <div>
+      <h2 class="wrap-title">
+        Zamonaviy kasblarni bepul va qulay o'rganish
+      </h2>
+      <a class="wrap-link" routerLink="/courses" >Kurslar <i class="fa-solid fa-arrow-right"></i></a>
+     </div>
+      <img class="wrap-img" src="assets/image/program.png" alt="">
+    </div>
+    
+    <div class="courses">
+      <h2 class="subtitle">Kurslar</h2>
+     <div class="course-wrap">
+      <app-course-cart *ngFor="let c of courses" [course]="c"></app-course-cart>
+     </div>
+    </div>
+
+    <div class="wrap">
+      <img class="wrap-img" src="assets/image/ing.png" alt="">
+      <div>
+       <h2 class="wrap-title">
+        Oson til o'rganish
+       </h2>
+       <a class="wrap-link" routerLink="/courses" >Kurslar <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+
+    <div class="cinema">
+      <h2 class="subtitle">Ingliz tilidagi filmlar</h2>
+       <div class="wrapper">
+        <img class="cinema-img" src="assets/image/cartoon1.jpg" alt="">
+        <img class="cinema-img" src="assets/image/cartoon2.jpg" alt="">
+        <img class="cinema-img" src="assets/image/cartoon3.jpg" alt="">
+       </div>
+       <a class="wrap-sublink" routerLink="/cinema">Ko'proq filmlar ko'rish <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</div>
