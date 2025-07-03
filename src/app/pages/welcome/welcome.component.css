@@ -1,3 +1,6 @@
+.welcome{
+  overflow-y: auto;
+}
 .course-wrap {
     display: flex;
     flex-wrap: wrap;

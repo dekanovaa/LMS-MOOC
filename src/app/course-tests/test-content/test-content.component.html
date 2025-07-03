@@ -1,0 +1,30 @@
+<section>
+    
+    <form [formGroup]="form">
+        <div class="test-comp" *ngFor="let test of tests | paginate: {itemsPerPage: 1, currentPage: p}; let i = index">
+            <h1>{{test.id}} - Savol</h1>
+            <p> {{test.question}}</p>
+            <div class="answer" id="answer">
+                <span>A</span>
+                <label for="answer">{{test.variants.A}}</label>
+            </div>    
+            <div class="answer" id="answer">
+                <span>B</span>
+                <label for="answer">{{test.variants.B}}</label>
+            </div> 
+            <div class="answer" id="answer">
+                <span>D</span>
+                <label for="answer">{{test.variants.D}}</label>           
+            </div> 
+            <div class="answer" id="answer">
+                <span>E</span>
+                <label for="answer">{{test.variants.E}}</label>
+            </div>
+        </div>   
+        <pagination-controls class="my-pagination" (pageChange)="p = $event"></pagination-controls>
+        <!-- <div class="pagination">
+            <button></button>   
+        </div>  -->
+        
+    </form>
+</section>

@@ -1,1 +1,97 @@
-<p>sign-in works!</p>
+<div class="wrap">
+    <!-- div for registr -->
+    @if(isRegistr) {
+    <div class="registr">
+      <div class="left">
+        <h3>Xush kelibsiz!</h3>
+        <p>Shaxsiy ma'lumotlaringiz bilan kiring</p>
+        <button (click)="showIn()">Kirish</button>
+      </div>
+      <div class="right">
+        <form [formGroup]="formRegistr">
+          <h3>Ro'yxatdan o'tish</h3>
+          <label for="first-name"></label><br />
+          <input
+            type="text"
+            id="first-name"
+            placeholder="First Name"
+            required
+            formControlName="firstName"
+          /><br />
+          
+          <label for="last-name"></label><br />
+          <input
+            type="text"
+            id="last-name"
+            placeholder="Last Name"
+            required
+            formControlName="lastName"
+          /><br />
+          <label for="email"></label><br />
+          <input type="text" id="email" placeholder="Email" required 
+          formControlName="email"
+          /><br />
+          <label for="password"></label><br />
+          <input
+            type="text"
+            id="password"
+            placeholder="Password"
+            required
+            formControlName="password"
+          /><br />
+          <label for="password"></label><br />
+          <input
+            type="text"
+            id="password"
+            placeholder="Password"
+            required
+            formControlName="password"
+          /><br />
+          <div class="check-box">
+            <label for="checkbox">Shartlarga rozilik</label>
+            <input class="check-input" type="checkbox" formControlName="checkbox" />
+          </div>
+          <button class="form-btn" type="button" (click)="registr()">Ro'yxatdan o'tish</button> <br />
+          <button class="login-link" (click)="showIn()">Loginga o'tish</button>
+        </form>
+      </div>
+    </div>
+    }
+  
+    <!-- div for sign-in -->
+    @else{
+    <div class="sign-in">
+      <div class="right">
+        <form [formGroup]="formLogin"> 
+          <h3>Kirish</h3>
+          <label for="login"></label><br />
+          <input type="text" id="login" placeholder="Login" required 
+          formControlName="login"
+          /><br />
+          <label for="password"></label><br />
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+            formControlName="password"
+          /><br />
+          <div class="check-box">
+            <label for="checkbox">Shartlarga rozilik</label>
+            <input class="check-input" type="checkbox" required/>
+          </div>
+          <button class="form-btn" (click)="login()">Kirish</button> <br />
+          <button type="button" class="login-link" (click)="showIn()">
+            Ro'yxatdan o'tish
+          </button>
+        </form>
+      </div>
+      <div class="left">
+        <h3>Salom!</h3>
+        <p>Login va parolingizni kiriting</p>
+        <button (click)="showIn()">Ro'yxatdan o'tish</button>
+      </div>
+    </div>
+    }
+  </div>
+  

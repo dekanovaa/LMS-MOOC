@@ -1,0 +1,336 @@
+{
+    "tests": [
+      {
+        "id": 1,
+        "question": "Angular-da ngOnInit() qachon chaqiriladi?",
+        "variants": {
+          "A": "Komponent DOMga render bo‘lgach",
+          "B": "Constructor chaqirilganda",
+          "D": "ngOnChanges()dan keyin",
+          "E": "Komponent yo‘q bo‘lganda"
+        },
+        "answer": "Komponent DOMga render bo‘lgach"
+      },
+      {
+        "id": 2,
+        "question": "@Input() decorator qaysi holatda ishlatiladi?",
+        "variants": {
+          "A": "Farzand komponentdan ota komponentga ma'lumot yuborishda",
+          "B": "Ota komponentdan farzand komponentga ma'lumot yuborishda",
+          "D": "Har doim ichki style qo‘llash uchun",
+          "E": "Router parametrlarini olish uchun"
+        },
+        "answer": "Ota komponentdan farzand komponentga ma'lumot yuborishda"
+      },
+      {
+        "id": 3,
+        "question": "ReactiveFormsModule qayerda ishlatiladi?",
+        "variants": {
+          "A": "Template-based formda",
+          "B": "Asinxron routingda",
+          "D": "Reactive forma yaratishda",
+          "E": "Guard yozishda"
+        },
+        "answer": "Reactive forma yaratishda"
+      },
+      {
+        "id": 4,
+        "question": "HttpClient qaysi modulga tegishli?",
+        "variants": {
+          "A": "HttpModule",
+          "B": "CommonModule",
+          "D": "HttpClientModule",
+          "E": "FormsModule"
+        },
+        "answer": "HttpClientModule"
+      },
+      {
+        "id": 5,
+        "question": "*ngIf bu...",
+        "variants": {
+          "A": "Attribute directive",
+          "B": "Structural directive",
+          "D": "Custom pipe",
+          "E": "Event emitter"
+        },
+        "answer": "Structural directive"
+      },
+      {
+        "id": 6,
+        "question": "ngOnDestroy() qachon chaqiriladi?",
+        "variants": {
+          "A": "Component DOMga render bo‘lganda",
+          "B": "Component yangilanganda",
+          "D": "Component DOMdan olib tashlanganda",
+          "E": "Constructor ichida"
+        },
+        "answer": "Component DOMdan olib tashlanganda"
+      },
+      {
+        "id": 7,
+        "question": "RouterModule.forRoot() qayerda ishlatiladi?",
+        "variants": {
+          "A": "Child modullarda",
+          "B": "Root modullarda",
+          "D": "Har bir komponentda",
+          "E": "ViewEncapsulation bilan birga"
+        },
+        "answer": "Root modullarda"
+      },
+      {
+        "id": 8,
+        "question": "ViewChild() decorator nimaga ishlatiladi?",
+        "variants": {
+          "A": "Farzand komponentdan ma'lumot olish uchun",
+          "B": "HTML elementga yoki component instance’ga murojaat qilish uchun",
+          "D": "Route parametrlarni olish uchun",
+          "E": "Observable yaratish uchun"
+        },
+        "answer": "HTML elementga yoki component instance’ga murojaat qilish uchun"
+      },
+      {
+        "id": 9,
+        "question": "ChangeDetectionStrategy.OnPush qanday ishlaydi?",
+        "variants": {
+          "A": "Har doim DOM yangilanadi",
+          "B": "Faqat input yoki event bo‘lsa yangilanadi",
+          "D": "Doimiy ravishda async ishlaydi",
+          "E": "Har bir service o‘zgarishida DOM yangilanadi"
+        },
+        "answer": "Faqat input yoki event bo‘lsa yangilanadi"
+      },
+      {
+        "id": 10,
+        "question": "trackBy funksiyasi nima uchun kerak?",
+        "variants": {
+          "A": "Service chaqirish uchun",
+          "B": "ngForda DOM-ni optimallashtirish uchun",
+          "D": "Pipe chaqirish uchun",
+          "E": "Route o‘zgartirish uchun"
+        },
+        "answer": "ngForda DOM-ni optimallashtirish uchun"
+      },
+      {
+        "id": 11,
+        "question": "BehaviorSubject nima bilan ajralib turadi?",
+        "variants": {
+          "A": "To‘liq ma'lumotni saqlamaydi",
+          "B": "Oxirgi qiymatni saqlaydi",
+          "D": "Har doim null qiymat beradi",
+          "E": "Faqat template ichida ishlaydi"
+        },
+        "answer": "Oxirgi qiymatni saqlaydi"
+      },
+      {
+        "id": 12,
+        "question": "Angular Interceptor qayerda ishlatiladi?",
+        "variants": {
+          "A": "Routingga ruxsat berishda",
+          "B": "Component lifecycle’ida",
+          "D": "HTTP so‘rov va javoblarni tutishda",
+          "E": "Change detectionda"
+        },
+        "answer": "HTTP so‘rov va javoblarni tutishda"
+      },
+      {
+        "id": 13,
+        "question": "ng-template nimaga ishlatiladi?",
+        "variants": {
+          "A": "Har doim DOMga render qilish uchun",
+          "B": "Shartli kontentni saqlash uchun",
+          "D": "Observable yaratish uchun",
+          "E": "HTTP interceptor ichida ishlash uchun"
+        },
+        "answer": "Shartli kontentni saqlash uchun"
+      },
+      {
+        "id": 14,
+        "question": "canActivate guard nima qiladi?",
+        "variants": {
+          "A": "Component ichidagi inputlarni boshqaradi",
+          "B": "Routingga kirishni nazorat qiladi",
+          "D": "DOM elementlarga class qo‘shadi",
+          "E": "Lifecycle hook’ni boshqaradi"
+        },
+        "answer": "Routingga kirishni nazorat qiladi"
+      },
+      {
+        "id": 15,
+        "question": "NgModule ichidagi exports nima uchun kerak?",
+        "variants": {
+          "A": "Ichki komponentlarni yashirish uchun",
+          "B": "Boshqa modullarda foydalanishga ruxsat berish uchun",
+          "D": "Routingni boshqarish uchun",
+          "E": "CSS faylni yuklash uchun"
+        },
+        "answer": "Boshqa modullarda foydalanishga ruxsat berish uchun"
+      },
+      {
+        "id": 16,
+        "question": "Renderer2 nima qiladi?",
+        "variants": {
+          "A": "Componentlarni yuklaydi",
+          "B": "DOM elementlar bilan xavfsiz ishlaydi",
+          "D": "Module lifecycle’ini boshqaradi",
+          "E": "HTTP so‘rov jo‘natadi"
+        },
+        "answer": "DOM elementlar bilan xavfsiz ishlaydi"
+      },
+      {
+        "id": 17,
+        "question": "Angular Universal nima beradi?",
+        "variants": {
+          "A": "Static file hosting",
+          "B": "Server Side Rendering (SSR) imkoniyati",
+          "D": "Mobile friendly komponentlar",
+          "E": "Routingni avtomatlashtirish"
+        },
+        "answer": "Server Side Rendering (SSR) imkoniyati"
+      },
+      {
+        "id": 18,
+        "question": "APP_INITIALIZER qayerda ishlatiladi?",
+        "variants": {
+          "A": "Template ichida",
+          "B": "Ilova boshlanishida async ishlar uchun",
+          "D": "Routingda",
+          "E": "Component style’da"
+        },
+        "answer": "Ilova boshlanishida async ishlar uchun"
+      },
+      {
+        "id": 19,
+        "question": "ɵɵdefineComponent nimaga tegishli?",
+        "variants": {
+          "A": "Ochiq API’ga",
+          "B": "Ichki (private) Angular API’ga",
+          "D": "RxJS kutubxonasiga",
+          "E": "Router moduli"
+        },
+        "answer": "Ichki (private) Angular API’ga"
+      },
+      {
+        "id": 20,
+        "question": "Injector.create() qanday ishlaydi?",
+        "variants": {
+          "A": "DOM yaratadi",
+          "B": "Yangi service instansini yaratadi",
+          "D": "Guard qo‘shadi",
+          "E": "Route kirishni tekshiradi"
+        },
+        "answer": "Yangi service instansini yaratadi"
+      },
+      {
+        "id": 21,
+        "question": "NgZone nima qiladi?",
+        "variants": {
+          "A": "Template formatlash uchun",
+          "B": "Angular event loop va change detection’ni boshqaradi",
+          "D": "HTTP request jo‘natadi",
+          "E": "Routing guardlarni yaratadi"
+        },
+        "answer": "Angular event loop va change detection’ni boshqaradi"
+      },
+      {
+        "id": 22,
+        "question": "ContentChild() decorator nimaga xizmat qiladi?",
+        "variants": {
+          "A": "DOMga ruxsat berish uchun",
+          "B": "ng-content orqali yuborilgan elementni olish uchun",
+          "D": "Route navigatsiyasini soddalashtirish uchun",
+          "E": "Async pipe bilan ishlash uchun"
+        },
+        "answer": "ng-content orqali yuborilgan elementni olish uchun"
+      },
+      {
+        "id": 23,
+        "question": "Lazy loading qanday amalga oshiriladi?",
+        "variants": {
+          "A": "Eager yuklash bilan",
+          "B": "loadChildren orqali modulni kechiktirib yuklash",
+          "D": "Static import orqali",
+          "E": "ViewChild() bilan"
+        },
+        "answer": "loadChildren orqali modulni kechiktirib yuklash"
+      },
+      {
+        "id": 24,
+        "question": "resolve guard vazifasi nima?",
+        "variants": {
+          "A": "Navigatsiyani bekor qilish",
+          "B": "Marshrut yuklanishidan oldin ma’lumot olish",
+          "D": "Lifecycle methodni chaqirish",
+          "E": "DOMni qayta yaratish"
+        },
+        "answer": "Marshrut yuklanishidan oldin ma’lumot olish"
+      },
+      {
+        "id": 25,
+        "question": "RouterOutlet nima?",
+        "variants": {
+          "A": "Service yozish uchun joy",
+          "B": "Komponent joylashadigan container",
+          "D": "Observable’ni filter qilish",
+          "E": "Guard’larni ishga tushirish"
+        },
+        "answer": "Komponent joylashadigan container"
+      },
+      {
+        "id": 26,
+        "question": "providedIn: 'root' qayerga taalluqli?",
+        "variants": {
+          "A": "Guard’lar",
+          "B": "Service’lar",
+          "D": "Template’lar",
+          "E": "Pipe’lar"
+        },
+        "answer": "Service’lar"
+      },
+      {
+        "id": 27,
+        "question": "Directive nima uchun ishlatiladi?",
+        "variants": {
+          "A": "Component yaratish uchun",
+          "B": "DOM elementlarning xatti-harakatini o‘zgartirish uchun",
+          "D": "Routing uchun",
+          "E": "Observable olish uchun"
+        },
+        "answer": "DOM elementlarning xatti-harakatini o‘zgartirish uchun"
+      },
+      {
+        "id": 28,
+        "question": "FormArray nimaga ishlatiladi?",
+        "variants": {
+          "A": "Router path’ni boshqarish",
+          "B": "Dinamik form elementlarini boshqarish",
+          "D": "Guard qo‘shish",
+          "E": "Template ngIf yaratish"
+        },
+        "answer": "Dinamik form elementlarini boshqarish"
+      },
+      {
+        "id": 29,
+        "question": "Angular-da service qayerda yoziladi?",
+        "variants": {
+          "A": "Faqat komponent ichida",
+          "B": "@Injectable() bilan alohida faylda",
+          "D": "main.ts faylida",
+          "E": "style.css faylida"
+        },
+        "answer": "@Injectable() bilan alohida faylda"
+      },
+      {
+        "id": 30,
+        "question": "async pipe qanday ishlaydi?",
+        "variants": {
+          "A": "Observable yoki Promise qiymatini avtomatik chiqaradi",
+          "B": "Static textlarni chiqaradi",
+          "D": "Lifecycle methodni ishga tushiradi",
+          "E": "Template’ni kechiktirib yuklaydi"
+        },
+        "answer": "Observable yoki Promise qiymatini avtomatik chiqaradi"
+      }
+    ]
+  }
+  
+   

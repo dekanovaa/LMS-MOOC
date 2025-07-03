@@ -1,0 +1,115 @@
+
+
+
+.timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #219B9D;
+    gap: 10px;
+    margin: 0;
+}
+    .time-box {
+      position: relative;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #219B9D;  
+      border-radius: 8px;
+    }
+
+      .box-subtitle {
+        position: absolute;
+        font-size: 1.1rem;
+        font-weight: 500;
+        transform: translateY(42px);
+        text-shadow: 0px 0px 1px #219B9D;
+      }
+    
+  
+  
+  
+  .total-test__wrapper {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 equal columns */
+    grid-template-rows: repeat(5, auto); /* 5 rows */
+    gap: 7px;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color:  #f6f6f6;
+  }
+  .total-test__wrapper span {
+      font-weight: 700;
+      padding: 6px 12px;
+      text-align: center;
+      font-weight: bold;
+      border: 2px solid #7e5eb1;
+      border-radius: 7px;
+    }
+      span:hover {
+        background-color: #4168d4;
+      color: #F1F1F1;
+      border: 1px solid #7e5eb1;
+      }
+
+      span:active {
+        background-color: #007f23;
+        border: 1px solid #7e5eb1;
+      }
+    
+
+
+ 
+  .comments-section__container {
+    margin-top: 28%;
+  }
+  .comments-section {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .comments-section__item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    list-style: none;
+  }
+
+  .comments-section__item svg {
+      width: 24px;
+      height: 24px; 
+  }
+  .comments-section__item  path {
+        fill: #FC8F54;
+      }
+    
+      .comments-section__item span {
+      font-size: 14px;
+      text-shadow: 0 0 1px #FC8F54;
+      color: #FC8F54;
+    }
+  
+  .second-item {
+    margin-right: 20%; 
+  }
+.finishing-btn {
+  margin-top:0.6rem;
+  width: 100%;
+  border: 2px solid #FC8F54;
+  border-radius: 10px;
+  color: #FC8F54;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 18px 0;
+  background-color: #f8f6f1;
+
+
+}
+
+ 

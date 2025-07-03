@@ -1,0 +1,8 @@
+.cinema{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.cinema-cart{
+    border-radius: 15px;
+}

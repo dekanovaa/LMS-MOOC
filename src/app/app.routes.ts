@@ -7,27 +7,33 @@ import { CoursesComponent } from './pages/courses/courses.component';
 import { CourseIdComponent } from './pages/courses/course-id/course-id.component';
 import { CodesComponent } from './pages/codes/codes.component';
 import { CinemaComponent } from './pages/cinema/cinema.component';
+import { LayoutComponent } from './layout/layout.component';
+import { CourseTestsComponent } from './course-tests/course-tests.component';
 
 export const routes: Routes = [
-  { path: '', pathMatch: 'full', component: WelcomeComponent },
-  { path: 'welcome', component: WelcomeComponent },
-  { path: 'sign-in', component: SignInComponent },
   {
-    path: 'codes',
-    component: CodesComponent,
-  },
-  {
-    path: 'cinema',
-    component: CinemaComponent
-
-  },
-  {
-    path: 'courses',
-    component: CoursesComponent,
+    path: '',
+    component: LayoutComponent,
     children: [
-      { path: '', component: CourseListComponent },
-      { path: 'start', component: CourseStartComponent },
-      { path: ':id', component: CourseIdComponent },
+      { path: 'welcome', component: WelcomeComponent },
+      {
+        path: 'courses',
+        component: CoursesComponent,
+        children: [
+          { path: '', component: CourseListComponent },
+          { path: 'start', component: CourseStartComponent },
+          { path: ':id', component: CourseIdComponent },
+        ],
+      },
+      { path: 'codes', component: CodesComponent },
+      { path: 'cinema', component: CinemaComponent },
+      // bosh sahifa
+      { path: '', redirectTo: 'welcome', pathMatch: 'full' },
+      { path: 'test', component: CourseTestsComponent },
     ],
+  },
+  {
+    path: 'sign-in',
+    component: SignInComponent,
   },
 ];

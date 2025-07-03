@@ -1,0 +1,174 @@
+
+.wrap {
+    /* background-image: url('assets/image/signin.png'); */
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+    .registr,.sign-in {
+      max-width: 1000px;
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 20px;
+      box-shadow: 5px 5px 5px 5px rgb(224, 223, 223);
+    }
+      .left {
+        background-color: rgb(107, 107, 231);
+        width: 45%;
+        text-align: center;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;}
+    
+        .left h3 {
+          font-size: 30px;
+          font-weight: 600;
+          color: white;
+          margin-bottom: 15px;
+        }
+        .left p {
+          font-size: 16px;
+          color: white;
+          opacity: 0.8;
+          margin-bottom: 35px;
+        }
+        .left button {
+          background-color: transparent;
+          width: 200px;
+          padding: 10px;
+          border: 1px solid white;
+          margin: 0 auto;
+          color: white;
+          font-size: 18px;
+          font-weight: 400;
+          border-radius: 40px;
+          cursor: pointer;}
+        
+    
+        @media (max-width: 760px) {
+          .left button {
+            display: none;
+          }
+          .left{
+            display: none;
+          }
+        }
+      
+      .right {
+        background-color: white;
+        width: 55%;
+        text-align: center;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;}
+        .right h3 {
+          font-size: 30px;
+          font-weight: 600;
+          color: #FC8F54;
+          margin-bottom: 15px;
+        }
+        .right form {
+          max-width: 400px;
+          width: 100%;
+          margin: 0 auto;
+        }
+        #password, #email, #first-name, #last-name, #login {
+          background-color: rgb(235, 239, 244);
+          width: 100%;
+          padding: 10px;
+          border: none;
+          border-radius: 8px;
+         box-shadow: 3px 3px 3px 3px rgb(224, 223, 223);
+          outline: none;
+        }
+      
+        .check-box {
+          display: flex;
+          align-items: start;
+          margin: 20px 0;
+    
+          gap: 8px;
+        }
+
+        .form-btn {
+          background-color: #FC8F54;
+          width: 200px;
+          padding: 10px;
+          margin: 0 auto;
+          color: white;
+          font-size: 18px;
+          font-weight: 400;
+          border-radius: 40px;
+          cursor: pointer;
+          border: none;
+        }
+        .login-link {
+          display: none;
+        }
+        @media (max-width: 760px) {
+          .right {
+            width: 100%;
+            padding: 20px;
+            border-radius: 15px;
+          }
+          input{
+            padding: 5px 10px;
+          }
+          .login-link{
+            display: block;
+            margin: 5px auto;
+            color: blue;
+          }
+        }
+      
+      @media (max-width: 760px) {
+        .right {
+          border-radius: 15px;
+        }
+      }
+     
+    
+    .sign-in{
+        .right{
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        @media (max-width: 760px) {
+            .right {
+              border-radius: 15px;
+            }
+            .registr-link{
+                display: block;
+            }
+          }
+        .left{
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .registr-link{
+            display: none;
+            margin: 5px auto;
+            color: blue;
+            
+        }
+      
+    }
+    .check-input {
+        width: 20px;
+        height: 20px;
+        box-shadow: none;
+      }
+    

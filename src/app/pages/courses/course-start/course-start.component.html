@@ -1,0 +1,28 @@
+<div class="start">
+    <div class="left">
+        <h3 class="title">Angular darslari</h3>
+        <ul class="start-list">
+          @for (item of mockData; track $index) {
+            <li class="start-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <a (click)="openVideo(item.url)" class="text">
+                {{ item.title }}
+              </a>
+            </li>
+          }
+        </ul>
+    </div>
+    <div class="right">
+        @if (activeVideo()) {
+            <iframe
+              class="video"
+              [src]="activeVideo()"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            }
+    </div>
+</div>
